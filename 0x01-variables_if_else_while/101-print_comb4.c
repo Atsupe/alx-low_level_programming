@@ -1,33 +1,36 @@
 #include <stdio.h>
-
 /**
- * main - prints combination of numbers
- * Return: Always (Success)
+ * main - entry point
+ *
+ * Return: always returns 0
+ *
  */
 int main(void)
 {
-	int 
+	int i;
+	int j;
+	int k;
 
-	for (n = 48; n < 58; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (m = 49; m < 58; m++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (l = 50; l < 58; l++)
+			for (k = 0; k <= 9; k++)
 			{
-			if (l > m && m > n)
-			{
-   				putchar(n);
-				putchar(m);
-				putchar(l);
-				if (n != 55 || m != 56)
-				i{
-					putchar(',');
-					putchar(' ');
+				if (k > j && j > i)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+
 			}
 		}
 	}
-
 	putchar('\n');
 	return (0);
-}
