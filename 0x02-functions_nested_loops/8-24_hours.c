@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * jack_bauer - Check Holberton
+ * jack_bauer - main thing
  * Description: function prints ever minute in one day
- * Return: Nothing
  */
 void jack_bauer(void)
 {
-	int H, M;
+	int i;
+	int j;
 
-	for (H = 0; H < 24; H++)
+	for (i = 0; i <= 23; i++)
 	{
-		for (M = 0; M < 60; M++)
+		for (j = 0; j <= 59; j++)
 		{
-			_putchar((H / 10) + '0');
-			_putchar((H % 10) + '0');
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
 			_putchar(':');
-			_putchar((M / 10) + '0');
-			_putchar((M % 10) + '0');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
 			_putchar('\n');
 		}
 	}
+}
