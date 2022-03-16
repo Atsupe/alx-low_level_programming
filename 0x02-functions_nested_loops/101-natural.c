@@ -1,3 +1,5 @@
+#include <stdio.h>
+/**
  * main - main function
  *
  * Return: always 0
@@ -11,7 +13,7 @@ int main(void)
 	{
 		if (a % 3 == 0 || a % 5 == 0)
 		{
-			b += a;
+			b =+a;
 		}
 
 	}
