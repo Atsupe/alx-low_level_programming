@@ -3,7 +3,7 @@
 /**
 * string_toupper - Function that reverses the content of an array of integers.
 *
-* @s: s is the array
+* @ch: ch is the array
 *
 * Return: Always 0.
 */
