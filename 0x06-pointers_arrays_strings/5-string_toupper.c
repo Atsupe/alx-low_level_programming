@@ -7,18 +7,15 @@
 *
 * Return: Always 0.
 */
-char *string_toupper(char *s)
+char *string_toupper(char *ch)
 {
 int i = 0;
 
-while (s[i] != '\0')
+while (ch[i] != '\0')
 {
-if ((s[i] >= 97) && (s[i] <= 122))
-{
-s[i] = s[i] - 3;
-}
+if (ch[i] >= 'a' && ch[i] <= 'z')
+ch[i] = 'A' + (ch[i] - 'a');
 i++;
-
 }
-return (s);
+return (ch);
 }
